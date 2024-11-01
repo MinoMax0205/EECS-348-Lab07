@@ -50,7 +50,8 @@ return output; }
 int sumOfDiagonals() const {
 	int sum = 0;
 	for (int i = 0; i < SIZE; i++) {
-		sum += data[i][i]; 
+		sum += data[i][i];
+		sum += data[i][SIZE-1-i];
 	}
 	return sum; }
 
